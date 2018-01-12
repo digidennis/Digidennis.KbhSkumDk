@@ -5,15 +5,15 @@
         <div class="col-sm-4 shipping-estimate">
             <h5>Leveringsmuligheder</h5>
             <div class="shipping-estimate-inner">
-                <f:for each="{quote.shipping}" as="rates">
-                    <p>{rate.methodDescription -> f:format.raw()}<strong>Pris: DKK {rate.price}.-</strong></p>
+                <f:for each="{quote.shipping}" as="rate">
+                    <p>{rate.methodDescription -> f:format.raw()}<strong>kr <f:format.number decimals="0">{rate.price}</f:format.number>.-</strong></p>
                 </f:for>
             </div>
         </div>
         <div class="col-sm-8 total-overview clearfix">
-            <p><b>{quote.itemCount}</b> vare(r) i indkøbskurv</p>
+            <p><b><f:format.number decimals="0">{quote.itemCount}</f:format.number></b> vare(r) i indkøbskurv</p>
             <!--p class="shipping">{quote.shipping.carrierTitle}<span>{quote.shipping.price}.-</span></p-->
-            <p class="amount">Ordretotal<span>DKK {quote.grandTotal}.-</span></p>
+            <p class="amount">Total (incl. moms, ex. levering)<span>kr {quote.grandTotal}.-</span></p>
             <a href="{cartlink}" title="Fortsæt til kasse" class="btn btn-primary pull-right">Fortsæt til kasse</a>
         </div>
     </div>
