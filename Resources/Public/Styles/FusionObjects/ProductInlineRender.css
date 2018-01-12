@@ -1,0 +1,54 @@
+.digidennis-mageme-product-inline {
+  text-align: left;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.digidennis-mageme-product-inline h3 {
+  margin: 15px 0 10px;
+  font-weight: 100;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.digidennis-mageme-product-inline h3 a {
+  color: currentColor;
+}
+.digidennis-mageme-product-inline .price {
+  font-weight: 100;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+.digidennis-mageme-product-inline .price > span {
+  font-weight: 100;
+  margin-left: -3px;
+}
+.digidennis-mageme-product-inline > ul {
+  list-style: none;
+  margin: 0 0 1em 0;
+  padding: 0;
+  color: #868686;
+  font-size: 15px;
+  line-height: 19px;
+}
+@media screen and (min-width: 768px) {
+  .digidennis-mageme-product-inline {
+    padding: 0;
+    border: none;
+    margin-bottom: 0;
+  }
+  .digidennis-mageme-product-inline .teaser {
+    height: 108px;
+    overflow: hidden;
+    font-size: .9em;
+    margin-bottom: 0.7em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .digidennis-mageme-product-inline .teaser {
+    height: 116px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .digidennis-mageme-product-inline .teaser {
+    height: 110px;
+  }
+}

@@ -1,0 +1,84 @@
+/**
+* Root TypoScript
+*/
+root {
+	default {
+		type = ${q(node).property('_nodeType') + '.Document'}
+		renderPath >
+	}
+}
+
+prototype(Digidennis.SitePack:Button){
+	templatePath = 'resource://Digidennis.KbhSkumDk/Private/Templates/NodeTypes/Button.html'
+}
+prototype(Digidennis.MageMe:Option){
+	templatePath = 'resource://Digidennis.KbhSkumDk/Private/Templates/NodeTypes/Option.html'
+}
+
+prototype(Digidennis.MageMe:ProductPage.Document) {
+	body {
+		templatePath = 'resource://Digidennis.KbhSkumDk/Private/Templates/Page/ProductPage.html'
+	}
+}
+
+prototype(Digidennis.MageMe:CartPage.Document) {
+	body {
+		content {
+			cartcontent = Neos.Fusion:Template {
+				templatePath = 'resource://Digidennis.KbhSkumDk/Private/Templates/FusionObjects/CartContent.html'
+			}
+		}
+	}
+}
+prototype(Neos.NodeTypes:Page.Document) {
+	head.analytics = Neos.Fusion:Template{
+		templatePath = 'resource://Digidennis.KbhSkumDk/Private/Templates/Page/Default.html'
+		sectionName = 'analytics'
+		@if.NotimBackend = ${node.context.inBackend == FALSE}
+	}
+	head.meta = Neos.Fusion:Template {
+		templatePath = 'resource://Digidennis.KbhSkumDk/Private/Templates/Page/Default.html'
+		sectionName = 'meta'
+	}
+	head.stylesheets {
+		minify.kbhskumdk-site = Digidennis.Minify:Resource {
+			group = 'csshead'
+			path = Neos.Fusion:ResourceUri {
+				path = 'resource://Digidennis.KbhSkumDk/Public/Styles/KbhSkumDk.css'
+			}
+			@position = "end"
+			@version = 2
+
+		}
+		google-fonts = Neos.Fusion:Tag{
+			tagName = 'link'
+			attributes {
+				rel = 'stylesheet'
+				href = "https://fonts.googleapis.com/css?family=Hind:400,700|Open Sans:300,600"
+			}
+		}
+		minify.kbhskumdkbackend = Digidennis.Minify:Resource{
+			group = 'csshead'
+			path = Neos.Fusion:ResourceUri {
+				path = 'resource://Digidennis.KbhSkumDk/Public/Styles/KbhSkumDkBackend.css'
+
+			}
+			@position = 'end'
+			@if.isBackend = ${node.context.inBackend}
+		}
+	}
+	body {
+		javascripts{
+			minify.kbhskumdk = Digidennis.Minify:Resource {
+				group = 'jsbody'
+				path = Neos.Fusion:ResourceUri {
+					path = 'resource://Digidennis.KbhSkumDk/Public/Javascript/KbhSkumDk.js'
+				}
+				@position = "end"
+				@version = 1
+			}
+		}
+	}
+}
+root.@cache.entryIdentifier.dimensions =  ${ "dimensions=" + Json.stringify(request.arguments.dimensions)}
+root.@cache.entryIdentifier.options =  ${ "options=" + Json.stringify(request.arguments.options)}

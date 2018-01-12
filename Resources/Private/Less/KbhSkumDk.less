@@ -1,0 +1,334 @@
+@import 'ContentTypes/Button';
+@import 'ContentTypes/Keyvisual';
+@import 'ContentTypes/Homepage';
+@import 'mixins';
+@import 'ContentTypes/Circle';
+@import 'ContentTypes/Square';
+@import 'NodeTypes/ProductPage';
+@import 'NodeTypes/ProductCatalogPage';
+@import 'NodeTypes/Dimension';
+@import 'NodeTypes/Option';
+@import 'NodeTypes/CartPage';
+@import 'NodeTypes/ProductList';
+@import 'FusionObjects/ProductInlineRender';
+
+body{
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: @font-black;
+  word-break: normal;
+  h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-transform: none;
+    margin-bottom: 15px;
+    margin-top: 0;
+    font-size: 30px;
+  }
+  b, strong{
+    font-weight: 600;
+  }
+}
+
+.neos-nodetypes-textwithimage{
+  & > div{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #fff;
+  }
+  p{
+    margin: 0;
+  }
+}
+.neos-nodetypes-text{
+  table{
+    width: 100%;
+    margin-bottom: 15px;
+    border-top: 10px solid;
+    caption{
+      display: none;
+    }
+    td,th{
+      padding: 5px 10px 5px 0;
+      border: 1px solid #cec9c9;
+      border-left: 0;
+      border-right: 0;
+      &:last-child{
+        padding-right: 0;
+      }
+    }
+  }
+}
+.neos-nodetypes-html{
+  table{
+    width: 100%;
+    td,th{
+      padding: 5px 9px 3px 3px;
+      border-bottom: 2px solid #f2f2f2;
+      border-left: 0;
+      border-right: 0;
+      color: currentColor;
+      &:last-child{
+        padding-right: 0;
+      }
+    }
+    tr:last-child td, tr:last-child th {
+      border-bottom: none;
+    }
+  }
+}
+
+.slick-arrow{
+  &.slick-prev{
+    &:before{
+      content:"\e257";
+      font-family: "Glyphicons Halflings";
+    }
+    left:2px;
+  }
+  &.slick-next{
+    &:before{
+      content:"\e258";
+      font-family: "Glyphicons Halflings";
+    }
+    right:2px;
+  }
+}
+.digidennis-sitepack-googlemaps{
+  margin: 0 0 15px;
+  width:auto!important;
+}
+.digidennis-sitepack-siteheader {
+  left:15px;
+  right:15px;
+  width:auto;
+  background: #bdbaa5;
+  .sitelogo {
+    img {
+      margin-top: 11px;
+      max-width: 180px;
+      height: auto;
+      margin-left: -1px;
+    }
+  }
+  .nav {
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .topcat{
+    .glyphicon{
+      margin-right: 6px;
+    }
+  }
+  @media screen{
+    @media (max-width: 1349px){
+      nav {
+        background: #bdbaa5;
+        padding: 75px 30px 15px;
+      }
+      .nav li.topcat > a {
+        font-weight: 600;
+      }
+    }
+    @media (min-width: 600px)and(max-width: 1349px){
+      nav.navigation-open {
+        padding: 75px 45px 15px;
+      }
+    }
+    @media (min-width: 768px)and(max-width: 1349px){
+      nav.navigation-open {
+        padding: 75px 60px 15px;
+      }
+    }
+    @media (min-width: 992px)and(max-width: 1349px){
+      nav.navigation-open {
+        padding: 75px 90px 15px;
+      }
+    }
+    @media (min-width: 1200px)and(max-width: 1349px){
+      nav.navigation-open {
+        padding: 75px 137px 15px;
+      }
+    }
+    @media (min-width: 1350px) {
+      .nav {
+        & > li {
+          margin-left: 30px;
+          a {
+            transition: none;
+          }
+        }
+      }
+      .nav-sublist {
+        border-radius: 0;
+        box-shadow: none;
+        border-top: 4px solid #1c879f;
+        &:after{
+          content:none;
+        }
+      }
+    }
+  }
+}
+section.content{
+  margin: 70px 15px 0px;
+  .neos-nodetypes-menu {
+    margin-top: 0;
+    margin-bottom: 5px;
+    list-style: none;
+    padding: 0;
+    li {
+      display: inline-block;
+      margin-bottom: 8px;
+      margin-right: 5px;
+      a {
+        text-transform: uppercase;
+        text-align: left;
+        color: #9c9c9c;
+        padding: 0 4px;
+        background-color: #f9f9f9;
+        border: 1px solid rgba(189, 189, 189, 0.42);
+        &:hover {
+          background-color: #fff;
+          text-decoration: none;
+          border-color: #333;
+          color:#333;
+          cursor: pointer;  }
+      }
+      &.current a {
+        color: #17344d !important;
+        text-decoration: none;
+        cursor: default;
+        pointer-events: none;
+      }
+    }
+  }
+}
+.digidennis-sitepack-homepage,
+.heropage {
+  .digidennis-sitepack-siteheader{
+    background: linear-gradient(to bottom, rgba(68, 144, 144, 0.37) 0, rgba(255,255,255,0) 100%);
+  }
+  section.content{
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .digidennis-sitepack-siteheader.siteheader-shaded {
+    background: #bdbaa5;
+  }
+}
+
+.breadcrumb{
+  border-radius: 0;
+  background-color: unset;
+  padding: 0;
+  margin: 0 0 4px;
+  font-size: 14px;
+  &>li{
+    margin-bottom: 5px;
+    &+li:before {
+      padding: 0 5px 0 2px;
+      color: #ccc;
+      content: "/";
+      font-size: 14px;
+    }
+  }
+}
+
+.container{
+  @media screen {
+    @media (min-width: 768px) {
+      width: 718px;
+    }
+    @media (min-width: 992px) {
+      width: 942px;
+    }
+    @media (min-width: 1200px) {
+      width: 1150px;
+    }
+  }
+}
+
+.formcollection{
+  .digidennis-sitepack-square{
+    padding: 15px;
+    background-color: #bdbaa5;
+    color: white;
+    text-align: left;
+    margin: 0 auto 15px;
+  }
+}
+form{
+  legend{
+    font-weight: 100;
+    font-size: 24px;
+    color:currentColor;
+  }
+  .clearfix{
+    label{
+      margin-bottom: 0;
+      font-weight: 400;
+    }
+    .input {
+      position: relative;
+      input, textarea {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 6px 8px;
+        border-style: solid;
+        border-width: 1px;
+        color:@font-black;
+        border-color: beige;
+        &.error{
+          border-color: #F70000;
+        }
+      }
+      input[type=file] {
+        border: none;
+        padding: 4px 0;
+      }
+      span.help-inline{
+        color: #f70000;
+        position: absolute;
+        top: -24px;
+        right: 0;
+      }
+    }
+  }
+  .form-navigation{
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li{
+        text-align: right;
+        margin-left: 10px;
+      }
+      .btn-primary{
+        background-image: none;
+        background: #324b7d;
+        border-color: transparent;
+        border-width: 0;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.21);
+        font-weight: 100;
+        display: inline-block;
+        padding: 7px 16px;
+        font-size: 16px;
+        &:hover, &:focus{
+          background-color: #469dea;
+          border-color: #fff;
+        }
+      }
+    }
+  }
+}

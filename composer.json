@@ -1,0 +1,22 @@
+{
+    "description": "",
+    "type": "neos-site",
+    "require": {
+        "neos/neos": "*",
+        "neos/nodetypes": "*"
+    },
+    "suggest": {
+        "neos/seo": "*"
+    },
+    "name": "digidennis/kbhskumdk",
+    "autoload": {
+        "psr-4": {
+            "Digidennis\\KbhSkumDk\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Digidennis.KbhSkumDk"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.digidennis-sitepack-button {
+  background-image: none;
+  background: #324b7d;
+  border-color: rgba(255, 255, 255, 0.52) #e2f7fb #2cdaff #77ffff;
+  border-width: 7px;
+  border-radius: 28px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.21);
+  font-weight: 100;
+  margin-top: 2em;
+}
+.digidennis-sitepack-button:hover,
+.digidennis-sitepack-button:focus {
+  background-color: #469dea;
+  border-color: #fff;
+}
+.digidennis-sitepack-button i.fa {
+  margin-left: 0.6em;
+  font-size: 0.9em;
+}

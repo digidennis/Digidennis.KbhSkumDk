@@ -1,0 +1,82 @@
+.digidennis-mageme-option,
+.digidennis-mageme-optionbundleimage{
+  label{
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+  }
+  *[data-component="OptionPrice"]{
+    position: absolute;
+    top: 11px;
+    right: 0;
+    height: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    color: #4ec9da;
+    display: none;
+  }
+  &.option-disabled{
+    .digidennis-mageme-option-notice {
+      opacity: 1!important;
+      color: #6390ab;
+      margin-bottom: 10px;
+      font-style: italic;
+      font-size: 16px;
+    }
+    h5, label{
+      color:#c5c5c5;
+    }
+    *[data-component="OptionPrice"]{
+      color: #c5c5c5;
+    }
+    dt{
+      border-color:#c5c5c5;
+    }
+  }
+  .digidennis-mageme-option-select {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    vertical-align: text-bottom;
+    .SumoSelect{
+      width: 129px;
+      display: block;
+      .CaptionCont{
+        border: 1px solid #bbb;
+        background-color: #fff;
+        border-width: 0 0 1px 0;
+        margin: 0;
+        border-radius: 0;
+        font-size: 14px;
+      }
+      .SelectBox {
+        padding: 2px 8px;
+        height: 26px;
+      }
+      &.open > .optWrapper{
+        top:28px;
+        border-radius: 0;
+        .opt{
+          padding:4px 6px;
+          &.selected{
+            background-color: #a5f7a5;
+          }
+        }
+      }
+      label{
+        font-size:14px;
+      }
+    }
+  }
+}
+
+.option-content {
+  font-size: 16px;
+  background-color:  white;
+  padding:5px;
+  .neos-nodetypes-text p:last-child {
+    margin-bottom:0;
+  }
+  margin-bottom: 5px;
+}

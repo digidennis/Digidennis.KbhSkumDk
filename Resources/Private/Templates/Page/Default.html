@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace fusion=Neos\Fusion\ViewHelpers}
+<html>
+<head>
+	<f:section name="stylesheets">
+		<!-- Put your stylesheet inclusions here, they will be included in your website by Fusion -->
+	</f:section>
+	<f:section name="analytics">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-25970418-5"></script>
+		<script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-25970418-5');
+            gtag('config', 'AW-1012992992');
+		</script>
+	</f:section>
+	<f:section name="meta">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="apple-touch-icon" sizes="180x180" href="{f:uri.resource(path: 'Images/Favicon/apple-touch-icon.png', package: 'Digidennis.KbhSkumDk')}">
+		<link rel="icon" type="image/png" sizes="32x32" href="{f:uri.resource(path: 'Images/Favicon/favicon-32x32.png', package: 'Digidennis.KbhSkumDk')}">
+		<link rel="icon" type="image/png" sizes="16x16" href="{f:uri.resource(path: 'Images/Favicon/favicon-16x16.png', package: 'Digidennis.KbhSkumDk')}">
+		<link rel="manifest" href="{f:uri.resource(path: 'Images/Favicon/manifest.json', package: 'Digidennis.KbhSkumDk')}">
+		<link rel="mask-icon" href="{f:uri.resource(path: 'Images/Favicon/safari-pinned-tab.svg', package: 'Digidennis.KbhSkumDk')}" color="#70dbfd">
+		<meta name="apple-mobile-web-app-title" content="KBH SKUM">
+		<meta name="application-name" content="KBH SKUM">
+		<meta name="theme-color" content="#ffffff">
+	</f:section>
+</head>
+<body>
+<f:section name="body">
+	<nav class="menu">
+		{parts.menu -> f:format.raw()}
+	</nav>
+	<nav class="menu">
+		{parts.submenumenu -> f:format.raw()}
+	</nav>
+	<div class="content">
+		{content.main -> f:format.raw()}
+	</div>
+</f:section>
+<f:section name="bodyScripts">
+	<!-- Put your scripts inclusions for the end of the body here, they will be included in your website by Fusion -->
+</f:section>
+</body>
+</html>

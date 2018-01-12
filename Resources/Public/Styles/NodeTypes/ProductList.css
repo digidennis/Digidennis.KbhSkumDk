@@ -1,0 +1,16 @@
+.digidennis-mageme-productlist {
+  margin: -7px -7px 8px -7px;
+}
+.digidennis-mageme-productlist div[class^="col-"] {
+  border: 7px solid #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 0;
+  margin-bottom: 0;
+  background-color: #f2f2f2;
+}
+.digidennis-mageme-productlist .digidennis-mageme-product-inline {
+  padding: 0;
+  text-align: left;
+  border: 0;
+}

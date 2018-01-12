@@ -1,0 +1,53 @@
+.digidennis-mageme-product-inline{
+  text-align: left;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  h3 {
+    margin: 15px 0 10px;
+    font-weight: 100;
+    font-size: 18px;
+    text-transform: uppercase;
+    a{
+      color: currentColor;
+    }
+  }
+  .price{
+    font-weight: 100;
+    font-size: 23px;
+    margin-bottom: 10px;
+    & > span{
+      font-weight: 100;
+      margin-left: -3px;
+    }
+  }
+  & > ul {
+    list-style: none;
+    margin: 0 0 1em 0;
+    padding: 0;
+    color: @font-lightblack;
+    font-size: 16px;
+  }
+  @media screen {
+    @media (min-width: 768px){
+      padding: 0;
+      border: none;
+      margin-bottom: 0;
+      .teaser {
+        height:108px;
+        overflow: hidden;
+        font-size: .9em;
+        margin-bottom: .7em
+      }
+    }
+    @media (min-width: 992px) {
+      .teaser {
+        height:116px;
+      }
+    }
+    @media (min-width: 1200px) {
+      .teaser {
+        height:110px;
+      }
+    }
+  }
+}

@@ -1,0 +1,1032 @@
+.digidennis-sitepack-button {
+  background-image: none;
+  background: #324b7d;
+  border-color: rgba(255, 255, 255, 0.52) #e2f7fb #2cdaff #77ffff;
+  border-width: 7px;
+  border-radius: 28px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.21);
+  font-weight: 100;
+  margin-top: 2em;
+}
+.digidennis-sitepack-button:hover,
+.digidennis-sitepack-button:focus {
+  background-color: #469dea;
+  border-color: #fff;
+}
+.digidennis-sitepack-button i.fa {
+  margin-left: 0.6em;
+  font-size: 0.9em;
+}
+.digidennis-sitepack-keyvisual {
+  background-color: #f2f2f2;
+  color: #636363;
+  padding: 15px 0;
+  margin: 0 0 15px;
+  /*@media screen {
+    @media (min-width: 1200px) {
+      font-size: 1.4em;
+    }
+  }*/
+}
+.digidennis-sitepack-keyvisual > .neos-nodetypes-headline:first-child {
+  margin-left: 15px;
+  margin-bottom: -10px;
+}
+.digidennis-sitepack-keyvisual h1 {
+  font-size: 34px;
+  margin-top: 20px;
+  font-weight: 100;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .digidennis-sitepack-keyvisual h1 {
+    text-align: left;
+  }
+}
+.digidennis-sitepack-keyvisual.landing {
+  background: url(../Images/forsidehero_full.jpg);
+  background-position: left 10%;
+  background-size: cover;
+  padding: 8em 0 6em;
+  color: #324b7d;
+  /*.slick-node{
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.51);
+    }*/
+}
+.digidennis-sitepack-keyvisual.landing h1 {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 992px) {
+  .digidennis-sitepack-keyvisual.landing {
+    padding: 9em 0 9em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .digidennis-sitepack-keyvisual.landing {
+    background-position: left 50%;
+  }
+}
+.digidennis-sitepack-keyvisual.about {
+  color: #b2c9e4;
+  padding: 15em 0 0;
+  background: url(../Images/hero_bg_8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 74%;
+}
+.digidennis-sitepack-keyvisual.materialer .neos-nodetypes-image {
+  background-color: white;
+  /*border:15px solid white;*/
+  margin-bottom: 15px;
+}
+.digidennis-sitepack-keyvisual.materialer .digidennis-sitepack-button {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.digidennis-sitepack-keyvisual.landing-hynde {
+  color: #495865;
+  padding: 40px 0 30px;
+  background: #495865 url('../Images/bamsepude_bg.jpg');
+  background-repeat: no-repeat;
+  background-position-x: -200px;
+  background-position-y: -40px;
+}
+.digidennis-sitepack-keyvisual.landing-hynde h1 {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.digidennis-sitepack-keyvisual.landing-hynde .digidennis-sitepack-button {
+  margin-bottom: 30px;
+}
+.digidennis-sitepack-keyvisual.landing-hynde .neos-nodetypes-threecolumn {
+  color: #d7d6d2;
+}
+.digidennis-sitepack-keyvisual.landing-hynde *[class^=col-md] {
+  margin-top: 30px;
+}
+.digidennis-sitepack-keyvisual.landing-hynde .digidennis-sitepack-circle {
+  background-color: #2b3541;
+  width: 30%;
+  padding-top: 30%;
+  margin: 0 0 5px;
+  color: #d7d6d2;
+}
+@media screen and (min-width: 360px) {
+  .digidennis-sitepack-keyvisual.landing-hynde .digidennis-sitepack-circle {
+    width: 80px;
+    padding-top: 80px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .digidennis-sitepack-keyvisual.landing-hynde .digidennis-sitepack-circle {
+    width: 90px;
+    padding-top: 90px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .digidennis-sitepack-keyvisual.landing-hynde .digidennis-sitepack-circle {
+    width: 120px;
+    padding-top: 120px;
+  }
+}
+.digidennis-sitepack-keyvisual.landing-hynde .digidennis-sitepack-circle p {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: 'Hind', sans-serif;
+  top: 55%;
+}
+@media (min-width: 992px) {
+  .digidennis-sitepack-keyvisual.landing-hynde {
+    color: #d7d6d2;
+    padding: 90px 0 60px;
+    background-position-x: 400px;
+  }
+}
+@media (min-width: 992px) {
+  .digidennis-sitepack-keyvisual.landing-hynde {
+    padding: 120px 0 60px;
+    background-position-x: 542px;
+  }
+}
+@media (min-width: 1200px) {
+  .digidennis-sitepack-keyvisual.landing-hynde {
+    background-position-x: 763px;
+  }
+}
+.digidennis-sitepack-sitefooter {
+  background-color: #4c4c4c;
+  color: #ededed;
+}
+.digidennis-sitepack-sitefooter *[class^="col-"] img {
+  max-width: 133px;
+  padding: 15px 0;
+}
+.digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-content {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-content h2 {
+  border-bottom: 1px solid #868686;
+  margin-bottom: 0.5em;
+  font-size: 22px;
+  padding-bottom: 0.4em;
+}
+.digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-content *[class^="col-"] {
+  padding-bottom: 15px;
+}
+.digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-properties {
+  margin: 30px 0 60px;
+  font-size: 16px;
+  text-align: center;
+}
+.digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-properties a[href^="tel"] {
+  color: #2cdaff;
+}
+.digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-properties h3 {
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #2cdaff;
+}
+.digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-properties .sitelogo {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+.digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-properties .sitelogo img {
+  width: 100px;
+}
+.digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-properties .digidennis-sitepack-icon.small {
+  font-size: 32px;
+  display: inline-block;
+  margin-right: 12px;
+  color: #2cdaff;
+  margin-top: 6px;
+}
+.digidennis-sitepack-sitefooter .legal {
+  padding: 0.8em 0 0;
+  text-align: center;
+  background-color: #ffffff;
+  font-size: 15px;
+  color: #2cdaff;
+}
+.digidennis-sitepack-circle.insquare:first-child {
+  width: 40%;
+  padding-top: 40%;
+}
+.digidennis-sitepack-circle > figure > p {
+  font-size: 257%;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+@media screen and (min-width: 320px) {
+  .digidennis-sitepack-circle.insquare:first-child {
+    width: 110px;
+    height: 110px;
+    padding: 0;
+    margin: -90px auto 25px;
+    top: inherit;
+  }
+}
+@media screen and (min-width: 640px) {
+  .digidennis-sitepack-circle.insquare:first-child {
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    margin: -110px auto 33px;
+    top: inherit;
+  }
+}
+@media screen and (min-width: 992px) {
+  .digidennis-sitepack-circle.insquare:first-child {
+    width: 114px;
+    height: 114px;
+    padding: 0;
+    margin: -102px auto 33px;
+    top: inherit;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .digidennis-sitepack-circle.insquare:first-child {
+    width: 130px;
+    height: 130px;
+    padding: 0;
+    margin: -114px auto 33px;
+    top: inherit;
+  }
+}
+.digidennis-sitepack-square .neos-nodetypes-text {
+  color: #242b39;
+  font-size: 0.8em;
+}
+@media screen and (min-width: 640px) {
+  .digidennis-sitepack-square.hascirclestart {
+    margin-top: 5em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .digidennis-sitepack-square.hascirclestart {
+    margin-top: 4em;
+  }
+}
+.digidennis-mageme-productpage section.content > .product-wrapper {
+  background-color: #f2f2f2;
+  padding-bottom: 30px;
+  margin-bottom: 15px;
+}
+.digidennis-mageme-productpage section.content .maincontent {
+  margin: 30px -15px 15px;
+}
+.digidennis-mageme-productpage section.content .maincontent .neos-nodetypes-image {
+  margin-bottom: 15px;
+}
+.digidennis-mageme-productpage h1 {
+  margin-top: 15px;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+@media screen and (min-width: 992px) {
+  .digidennis-mageme-productpage h1 {
+    margin-top: 30px;
+  }
+}
+.digidennis-mageme-productpage input[type="number"] {
+  border-bottom: 1px solid #bbb;
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+  background-color: #fff;
+  text-align: center;
+}
+.digidennis-mageme-productpage .digidennis-mageme-productpage-slick .slick-node {
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 15px;
+}
+.digidennis-mageme-productpage .digidennis-mageme-productpage-slick .slick-node .slick-dots {
+  text-align: left;
+  position: relative;
+  bottom: inherit;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.digidennis-mageme-productpage .digidennis-mageme-productpage-slick .slick-node .slick-dots li {
+  width: 60px;
+  height: auto;
+  margin: 0 7px 7px 0;
+}
+.digidennis-mageme-productpage .digidennis-mageme-productpage-slick .slick-node .slick-dots li img {
+  border: 1px solid #e2e0da;
+}
+@media screen and (min-width: 768px) {
+  .digidennis-mageme-productpage .digidennis-mageme-productpage-slick .slick-node .slick-dots {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .digidennis-mageme-productpage .digidennis-mageme-productpage-slick .slick-node {
+    width: 100%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.digidennis-mageme-productpage .digidennis-mageme-productpage-slick .slick-node .slick-text {
+  background-color: transparent;
+}
+.digidennis-mageme-productpage label {
+  font-weight: 100;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+.digidennis-mageme-productpage .digidennis-mageme-productpage-sidebar label[for="qty"] {
+  vertical-align: bottom;
+  margin-right: 8px;
+  display: block;
+}
+.digidennis-mageme-productpage .digidennis-mageme-productpage-sidebar > .stepper {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+  width: 113px;
+}
+.digidennis-mageme-productpage .digidennis-mageme-productpage-sidebar > .stepper input {
+  width: 40px;
+  left: 36px;
+}
+.digidennis-mageme-productpage .digidennis-mageme-productpage-sidebar > .stepper .stepper-arrow.up {
+  left: 82px;
+}
+.digidennis-mageme-productpage .digidennis-mageme-productpage-sidebar .btn-primary {
+  margin-top: -5px;
+  background-image: none;
+  background: #324b7d;
+  border-color: transparent;
+  border-width: 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.21);
+  font-weight: 100;
+  display: inline-block;
+  margin-left: 2px;
+}
+.digidennis-mageme-productpage .digidennis-mageme-productpage-sidebar .btn-primary:hover,
+.digidennis-mageme-productpage .digidennis-mageme-productpage-sidebar .btn-primary:focus {
+  background-color: #469dea;
+  border-color: #fff;
+}
+.digidennis-mageme-productpage .digidennis-mageme-productpage-sidebar .digidennis-mageme-productpage-totalprice {
+  font-weight: 600;
+  font-size: 42px;
+  margin-top: 6px;
+  margin-bottom: -10px;
+}
+.digidennis-mageme-productpage .digidennis-mageme-productpage-sidebar .digidennis-mageme-productpage-totalprice span {
+  font-weight: 100;
+  font-size: 0.8em;
+  margin-left: 10px;
+}
+.digidennis-mageme-productpage .digidennis-mageme-productpage-sidebar .digidennis-mageme-productpage-pricemeta,
+.digidennis-mageme-productpage .digidennis-mageme-productpage-sidebar .digidennis-mageme-productpage-summary,
+.digidennis-mageme-productpage .digidennis-mageme-productpage-sidebar .digidennis-mageme-productpage-delivery-days-string,
+.digidennis-mageme-productpage .digidennis-mageme-productpage-sidebar .digidennis-mageme-productpage-product-return-policy {
+  color: #6d6d6d;
+  font-size: 16px;
+}
+.digidennis-mageme-productpage .digidennis-mageme-productpage-sidebar .digidennis-mageme-productpage-teaser {
+  margin-bottom: 15px;
+}
+.digidennis-mageme-productpage .digidennis-mageme-productpage-sidebar .digidennis-mageme-productpage-bottomicons {
+  margin-bottom: 10px;
+  display: none;
+}
+.digidennis-mageme-productpage .digidennis-mageme-productpage-sidebar .digidennis-mageme-productpage-summary {
+  margin-bottom: 15px;
+}
+.digidennis-mageme-productpage .digidennis-mageme-productpage-sidebar .digidennis-mageme-productpage-pricemeta {
+  margin-bottom: 15px;
+}
+.digidennis-mageme-productpage .digidennis-mageme-productpage-sidebar .digidennis-mageme-productpage-product-return-policy {
+  margin-bottom: 15px;
+}
+.digidennis-mageme-productpage .digidennis-mageme-productpage-sidebar .digidennis-mageme-productpage-product-return-policy img {
+  width: 28px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.digidennis-mageme-productpage dl.interface {
+  position: relative;
+  background-color: #e2e2e2;
+  padding: 0 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.digidennis-mageme-productpage dl.interface dt {
+  position: relative;
+  height: 40px;
+  border-bottom: 1px solid #bcbcbc;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+.digidennis-mageme-productpage dl.interface dt h5 {
+  border: none;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  padding: 0;
+}
+.digidennis-mageme-productpage dl.interface dt .digidennis-mageme-option-toggle {
+  width: 32px;
+  height: 40px;
+  cursor: pointer;
+  display: inline-block;
+  background: url(../Images/arrow-down-close-icon.svg);
+  background-repeat: no-repeat;
+  background-position: -26px 5px;
+  background-size: 190%;
+  float: left;
+  vertical-align: text-bottom;
+  left: -15px;
+  padding: 7px;
+  background-color: #fff516;
+  position: relative;
+}
+.digidennis-mageme-productpage dl.interface dt .digidennis-mageme-option-toggle:hover {
+  background-position-y: -26px;
+  background-color: #fffd9f;
+}
+@media screen and (min-width: 768px) {
+  .digidennis-mageme-productpage dl.interface dt .digidennis-mageme-option-toggle {
+    left: -8px;
+  }
+}
+.digidennis-mageme-productpage dl.interface dd[data-component="Item"] + dd[data-component="Item"] {
+  margin-top: -10px;
+}
+.digidennis-mageme-productpage dl.interface.option-open .digidennis-mageme-option-toggle {
+  background-position: 2px 4px;
+}
+@media screen and (min-width: 768px) {
+  .digidennis-mageme-productpage dl.interface {
+    padding: 0 8px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.digidennis-mageme-productpage .stepper {
+  height: 26px;
+  margin: 0;
+  border-radius: 0;
+  width: 127px;
+  font-size: 14px;
+}
+.digidennis-mageme-productpage .stepper .stepper-input {
+  padding: 4px 6px 4px 6px!important;
+  position: absolute;
+  bottom: 0;
+  width: 61px;
+  left: 33px;
+  height: 26px;
+}
+.digidennis-mageme-productpage .stepper .stepper-arrow {
+  width: 30px;
+  height: 26px;
+  background-color: #ececec;
+  position: absolute;
+  bottom: 0;
+  border: none;
+  top: unset;
+}
+.digidennis-mageme-productpage .stepper .stepper-arrow.up {
+  background-position: center 5px;
+  border-bottom: 1px solid #bbb;
+  left: 97px;
+}
+.digidennis-mageme-productpage .stepper .stepper-arrow.down {
+  background-position: center -14px;
+  left: 0;
+  border-bottom: 1px solid #bbb;
+}
+.digidennis-mageme-productcatalogpage section.content {
+  margin-top: 70px;
+}
+.digidennis-mageme-dimension {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  vertical-align: text-bottom;
+}
+.digidennis-mageme-option label,
+.digidennis-mageme-optionbundleimage label {
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */
+}
+.digidennis-mageme-option *[data-component="OptionPrice"],
+.digidennis-mageme-optionbundleimage *[data-component="OptionPrice"] {
+  position: absolute;
+  top: 11px;
+  right: 0;
+  height: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  color: #4ec9da;
+  display: none;
+}
+.digidennis-mageme-option.option-disabled .digidennis-mageme-option-notice,
+.digidennis-mageme-optionbundleimage.option-disabled .digidennis-mageme-option-notice {
+  opacity: 1!important;
+  color: #6390ab;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-size: 16px;
+}
+.digidennis-mageme-option.option-disabled h5,
+.digidennis-mageme-optionbundleimage.option-disabled h5,
+.digidennis-mageme-option.option-disabled label,
+.digidennis-mageme-optionbundleimage.option-disabled label {
+  color: #c5c5c5;
+}
+.digidennis-mageme-option.option-disabled *[data-component="OptionPrice"],
+.digidennis-mageme-optionbundleimage.option-disabled *[data-component="OptionPrice"] {
+  color: #c5c5c5;
+}
+.digidennis-mageme-option.option-disabled dt,
+.digidennis-mageme-optionbundleimage.option-disabled dt {
+  border-color: #c5c5c5;
+}
+.digidennis-mageme-option .digidennis-mageme-option-select,
+.digidennis-mageme-optionbundleimage .digidennis-mageme-option-select {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  vertical-align: text-bottom;
+}
+.digidennis-mageme-option .digidennis-mageme-option-select .SumoSelect,
+.digidennis-mageme-optionbundleimage .digidennis-mageme-option-select .SumoSelect {
+  width: 129px;
+  display: block;
+}
+.digidennis-mageme-option .digidennis-mageme-option-select .SumoSelect .CaptionCont,
+.digidennis-mageme-optionbundleimage .digidennis-mageme-option-select .SumoSelect .CaptionCont {
+  border: 1px solid #bbb;
+  background-color: #fff;
+  border-width: 0 0 1px 0;
+  margin: 0;
+  border-radius: 0;
+  font-size: 14px;
+}
+.digidennis-mageme-option .digidennis-mageme-option-select .SumoSelect .SelectBox,
+.digidennis-mageme-optionbundleimage .digidennis-mageme-option-select .SumoSelect .SelectBox {
+  padding: 2px 8px;
+  height: 26px;
+}
+.digidennis-mageme-option .digidennis-mageme-option-select .SumoSelect.open > .optWrapper,
+.digidennis-mageme-optionbundleimage .digidennis-mageme-option-select .SumoSelect.open > .optWrapper {
+  top: 28px;
+  border-radius: 0;
+}
+.digidennis-mageme-option .digidennis-mageme-option-select .SumoSelect.open > .optWrapper .opt,
+.digidennis-mageme-optionbundleimage .digidennis-mageme-option-select .SumoSelect.open > .optWrapper .opt {
+  padding: 4px 6px;
+}
+.digidennis-mageme-option .digidennis-mageme-option-select .SumoSelect.open > .optWrapper .opt.selected,
+.digidennis-mageme-optionbundleimage .digidennis-mageme-option-select .SumoSelect.open > .optWrapper .opt.selected {
+  background-color: #a5f7a5;
+}
+.digidennis-mageme-option .digidennis-mageme-option-select .SumoSelect label,
+.digidennis-mageme-optionbundleimage .digidennis-mageme-option-select .SumoSelect label {
+  font-size: 14px;
+}
+.option-content {
+  font-size: 16px;
+  background-color: white;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.option-content .neos-nodetypes-text p:last-child {
+  margin-bottom: 0;
+}
+.digidennis-mageme-cartpage .btn-primary {
+  background-image: none;
+  background-color: #324b7d;
+  line-height: 1.7em;
+  font-weight: 400;
+  box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.4);
+  border-color: #324b7d;
+  border-radius: 1px;
+  margin-bottom: 2em;
+  font-size: 18px;
+}
+.digidennis-mageme-cartpage .btn-primary:hover,
+.digidennis-mageme-cartpage .btn-primary:focus {
+  background-color: #1c879f;
+  border-color: #1c879f;
+}
+.digidennis-mageme-cartpage .digidennis-mageme-cartcontent {
+  background-color: #f2f2f2;
+  padding: 0 15px;
+}
+.digidennis-mageme-cartpage .digidennis-mageme-cartcontent .shipping-estimate h5 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  font-weight: 100;
+}
+.digidennis-mageme-cartpage .digidennis-mageme-cartcontent .shipping-estimate .shipping-estimate-inner p {
+  margin-bottom: 0;
+}
+.digidennis-mageme-cartpage .digidennis-mageme-cartcontent .qoute-item-list {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.digidennis-mageme-cartpage .digidennis-mageme-cartcontent .icons {
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: white;
+  padding-top: 15px;
+  text-align: center;
+}
+.digidennis-mageme-cartpage .digidennis-mageme-cartcontent .icons img {
+  max-height: 25px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.digidennis-mageme-productlist {
+  margin: -7px -7px 8px -7px;
+}
+.digidennis-mageme-productlist div[class^="col-"] {
+  border: 7px solid #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 0;
+  margin-bottom: 0;
+  background-color: #f2f2f2;
+}
+.digidennis-mageme-productlist .digidennis-mageme-product-inline {
+  padding: 0;
+  text-align: left;
+  border: 0;
+}
+.digidennis-mageme-product-inline {
+  text-align: left;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.digidennis-mageme-product-inline h3 {
+  margin: 15px 0 10px;
+  font-weight: 100;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.digidennis-mageme-product-inline h3 a {
+  color: currentColor;
+}
+.digidennis-mageme-product-inline .price {
+  font-weight: 100;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+.digidennis-mageme-product-inline .price > span {
+  font-weight: 100;
+  margin-left: -3px;
+}
+.digidennis-mageme-product-inline > ul {
+  list-style: none;
+  margin: 0 0 1em 0;
+  padding: 0;
+  color: #6d6d6d;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .digidennis-mageme-product-inline {
+    padding: 0;
+    border: none;
+    margin-bottom: 0;
+  }
+  .digidennis-mageme-product-inline .teaser {
+    height: 108px;
+    overflow: hidden;
+    font-size: .9em;
+    margin-bottom: 0.7em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .digidennis-mageme-product-inline .teaser {
+    height: 116px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .digidennis-mageme-product-inline .teaser {
+    height: 110px;
+  }
+}
+body {
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #303030;
+  word-break: normal;
+}
+body h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-transform: none;
+  margin-bottom: 15px;
+  margin-top: 0;
+  font-size: 30px;
+}
+body b,
+body strong {
+  font-weight: 600;
+}
+.neos-nodetypes-textwithimage > div {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: #fff;
+}
+.neos-nodetypes-textwithimage p {
+  margin: 0;
+}
+.neos-nodetypes-text table {
+  width: 100%;
+  margin-bottom: 15px;
+  border-top: 10px solid;
+}
+.neos-nodetypes-text table caption {
+  display: none;
+}
+.neos-nodetypes-text table td,
+.neos-nodetypes-text table th {
+  padding: 5px 10px 5px 0;
+  border: 1px solid #cec9c9;
+  border-left: 0;
+  border-right: 0;
+}
+.neos-nodetypes-text table td:last-child,
+.neos-nodetypes-text table th:last-child {
+  padding-right: 0;
+}
+.neos-nodetypes-html table {
+  width: 100%;
+}
+.neos-nodetypes-html table td,
+.neos-nodetypes-html table th {
+  padding: 5px 9px 3px 3px;
+  border-bottom: 2px solid #f2f2f2;
+  border-left: 0;
+  border-right: 0;
+  color: currentColor;
+}
+.neos-nodetypes-html table td:last-child,
+.neos-nodetypes-html table th:last-child {
+  padding-right: 0;
+}
+.neos-nodetypes-html table tr:last-child td,
+.neos-nodetypes-html table tr:last-child th {
+  border-bottom: none;
+}
+.slick-arrow.slick-prev {
+  left: 2px;
+}
+.slick-arrow.slick-prev:before {
+  content: "\e257";
+  font-family: "Glyphicons Halflings";
+}
+.slick-arrow.slick-next {
+  right: 2px;
+}
+.slick-arrow.slick-next:before {
+  content: "\e258";
+  font-family: "Glyphicons Halflings";
+}
+.digidennis-sitepack-googlemaps {
+  margin: 0 0 15px;
+  width: auto!important;
+}
+.digidennis-sitepack-siteheader {
+  left: 15px;
+  right: 15px;
+  width: auto;
+  background: #bdbaa5;
+}
+.digidennis-sitepack-siteheader .sitelogo img {
+  margin-top: 11px;
+  max-width: 180px;
+  height: auto;
+  margin-left: -1px;
+}
+.digidennis-sitepack-siteheader .nav {
+  font-family: 'Hind', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.digidennis-sitepack-siteheader .topcat .glyphicon {
+  margin-right: 6px;
+}
+@media screen and (max-width: 1349px) {
+  .digidennis-sitepack-siteheader nav {
+    background: #bdbaa5;
+    padding: 75px 30px 15px;
+  }
+  .digidennis-sitepack-siteheader .nav li.topcat > a {
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1349px) {
+  .digidennis-sitepack-siteheader nav.navigation-open {
+    padding: 75px 45px 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1349px) {
+  .digidennis-sitepack-siteheader nav.navigation-open {
+    padding: 75px 60px 15px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1349px) {
+  .digidennis-sitepack-siteheader nav.navigation-open {
+    padding: 75px 90px 15px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1349px) {
+  .digidennis-sitepack-siteheader nav.navigation-open {
+    padding: 75px 137px 15px;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .digidennis-sitepack-siteheader .nav > li {
+    margin-left: 30px;
+  }
+  .digidennis-sitepack-siteheader .nav > li a {
+    transition: none;
+  }
+  .digidennis-sitepack-siteheader .nav-sublist {
+    border-radius: 0;
+    box-shadow: none;
+    border-top: 4px solid #1c879f;
+  }
+  .digidennis-sitepack-siteheader .nav-sublist:after {
+    content: none;
+  }
+}
+section.content {
+  margin: 70px 15px 0px;
+}
+section.content .neos-nodetypes-menu {
+  margin-top: 0;
+  margin-bottom: 5px;
+  list-style: none;
+  padding: 0;
+}
+section.content .neos-nodetypes-menu li {
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-right: 5px;
+}
+section.content .neos-nodetypes-menu li a {
+  text-transform: uppercase;
+  text-align: left;
+  color: #9c9c9c;
+  padding: 0 4px;
+  background-color: #f9f9f9;
+  border: 1px solid rgba(189, 189, 189, 0.42);
+}
+section.content .neos-nodetypes-menu li a:hover {
+  background-color: #fff;
+  text-decoration: none;
+  border-color: #333;
+  color: #333;
+  cursor: pointer;
+}
+section.content .neos-nodetypes-menu li.current a {
+  color: #17344d !important;
+  text-decoration: none;
+  cursor: default;
+  pointer-events: none;
+}
+.digidennis-sitepack-homepage .digidennis-sitepack-siteheader,
+.heropage .digidennis-sitepack-siteheader {
+  background: linear-gradient(to bottom, rgba(68, 144, 144, 0.37) 0, rgba(255, 255, 255, 0) 100%);
+}
+.digidennis-sitepack-homepage section.content,
+.heropage section.content {
+  margin-top: 0;
+}
+@media screen and (min-width: 1350px) {
+  .digidennis-sitepack-siteheader.siteheader-shaded {
+    background: #bdbaa5;
+  }
+}
+.breadcrumb {
+  border-radius: 0;
+  background-color: unset;
+  padding: 0;
+  margin: 0 0 4px;
+  font-size: 14px;
+}
+.breadcrumb > li {
+  margin-bottom: 5px;
+}
+.breadcrumb > li + li:before {
+  padding: 0 5px 0 2px;
+  color: #ccc;
+  content: "/";
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 718px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 942px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1150px;
+  }
+}
+.formcollection .digidennis-sitepack-square {
+  padding: 15px;
+  background-color: #bdbaa5;
+  color: white;
+  text-align: left;
+  margin: 0 auto 15px;
+}
+form legend {
+  font-weight: 100;
+  font-size: 24px;
+  color: currentColor;
+}
+form .clearfix label {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+form .clearfix .input {
+  position: relative;
+}
+form .clearfix .input input,
+form .clearfix .input textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 6px 8px;
+  border-style: solid;
+  border-width: 1px;
+  color: #303030;
+  border-color: beige;
+}
+form .clearfix .input input.error,
+form .clearfix .input textarea.error {
+  border-color: #F70000;
+}
+form .clearfix .input input[type=file] {
+  border: none;
+  padding: 4px 0;
+}
+form .clearfix .input span.help-inline {
+  color: #f70000;
+  position: absolute;
+  top: -24px;
+  right: 0;
+}
+form .form-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+form .form-navigation ul li {
+  text-align: right;
+  margin-left: 10px;
+}
+form .form-navigation ul .btn-primary {
+  background-image: none;
+  background: #324b7d;
+  border-color: transparent;
+  border-width: 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.21);
+  font-weight: 100;
+  display: inline-block;
+  padding: 7px 16px;
+  font-size: 16px;
+}
+form .form-navigation ul .btn-primary:hover,
+form .form-navigation ul .btn-primary:focus {
+  background-color: #469dea;
+  border-color: #fff;
+}

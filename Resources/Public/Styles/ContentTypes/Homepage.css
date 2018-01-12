@@ -1,0 +1,56 @@
+.digidennis-sitepack-sitefooter {
+  background-color: #4c4c4c;
+  color: #ededed;
+}
+.digidennis-sitepack-sitefooter *[class^="col-"] img {
+  max-width: 133px;
+  padding: 15px 0;
+}
+.digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-content {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-content h2 {
+  border-bottom: 1px solid #868686;
+  margin-bottom: 0.5em;
+  font-size: 22px;
+  padding-bottom: 0.4em;
+}
+.digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-content *[class^="col-"] {
+  padding-bottom: 15px;
+}
+.digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-properties {
+  margin: 30px 0 60px;
+  font-size: 16px;
+  text-align: center;
+}
+.digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-properties a[href^="tel"] {
+  color: #2cdaff;
+}
+.digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-properties h3 {
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #2cdaff;
+}
+.digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-properties .sitelogo {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+.digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-properties .sitelogo img {
+  width: 100px;
+}
+.digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-properties .digidennis-sitepack-icon.small {
+  font-size: 32px;
+  display: inline-block;
+  margin-right: 12px;
+  color: #2cdaff;
+  margin-top: 6px;
+}
+.digidennis-sitepack-sitefooter .legal {
+  padding: 0.8em 0 0;
+  text-align: center;
+  background-color: #ffffff;
+  font-size: 15px;
+  color: #2cdaff;
+}

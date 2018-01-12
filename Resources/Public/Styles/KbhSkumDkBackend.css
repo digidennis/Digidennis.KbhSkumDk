@@ -1,0 +1,8 @@
+.option-content{
+    opacity: 1!important;
+    max-height: none!important;
+    overflow:unset!important;
+    margin: inherit!important;
+    transition: unset!important;
+
+}
