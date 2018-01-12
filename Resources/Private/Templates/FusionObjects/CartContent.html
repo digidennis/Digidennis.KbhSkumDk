@@ -6,14 +6,15 @@
             <h5>Leveringsmuligheder</h5>
             <div class="shipping-estimate-inner">
                 <f:for each="{quote.shipping}" as="rate">
-                    <p>{rate.methodDescription -> f:format.raw()}<strong>kr <f:format.number decimals="0">{rate.price}</f:format.number>.-</strong></p>
+                    <p>{rate.carrier_title -> f:format.raw()} - {rate.method_title -> f:format.raw()}<strong>kr <f:format.number decimals="0">{rate.price}</f:format.number>.-</strong></p>
+                    <p>{rate.method_description -> f:format.raw()}</p>
                 </f:for>
             </div>
         </div>
         <div class="col-sm-8 total-overview clearfix">
             <p><b><f:format.number decimals="0">{quote.itemCount}</f:format.number></b> vare(r) i indkøbskurv</p>
             <!--p class="shipping">{quote.shipping.carrierTitle}<span>{quote.shipping.price}.-</span></p-->
-            <p class="amount">Total (incl. moms, ex. levering)<span>kr {quote.grandTotal}.-</span></p>
+            <p class="amount">Ordretotal<span>kr {quote.grandTotal}.-</span></p>
             <a href="{cartlink}" title="Fortsæt til kasse" class="btn btn-primary pull-right">Fortsæt til kasse</a>
         </div>
     </div>
