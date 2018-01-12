@@ -6,8 +6,8 @@
             <h5>Leveringsmuligheder</h5>
             <div class="shipping-estimate-inner">
                 <f:for each="{quote.shipping}" as="rate">
-                    <p>{rate.carrier_title -> f:format.raw()} - {rate.method_title -> f:format.raw()}<strong>kr <f:format.number decimals="0">{rate.price}</f:format.number>.-</strong></p>
-                    <p>{rate.method_description -> f:format.raw()}</p>
+                    <p class="shipping-estimate-rate-title">{rate.carrier_title -> f:format.raw()} - {rate.method_title -> f:format.raw()}<strong>kr <f:format.number decimals="0">{rate.price}</f:format.number>.-</strong></p>
+                    <p class="shipping-estimate-rate-description">{rate.method_description -> f:format.raw()}</p>
                 </f:for>
             </div>
         </div>
