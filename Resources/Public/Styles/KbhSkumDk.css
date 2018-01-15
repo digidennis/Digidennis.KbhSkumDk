@@ -941,7 +941,7 @@ section.content .neos-nodetypes-menu li.current a {
 }
 .breadcrumb {
   border-radius: 0;
-  background-color: unset;
+  background-color: transparent;
   padding: 0;
   margin: 0 0 4px;
   font-size: 14px;

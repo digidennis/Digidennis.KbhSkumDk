@@ -2,7 +2,7 @@
 
 <div class="digidennis-mageme-cartcontent">
     <div class="row">
-        <div class="col-sm-4 shipping-estimate">
+        <div class="col-sm-5 col-md-4 shipping-estimate">
             <h5>Leveringsmuligheder</h5>
             <div class="shipping-estimate-inner">
                 <f:for each="{quote.shipping}" as="rate">
@@ -11,7 +11,7 @@
                 </f:for>
             </div>
         </div>
-        <div class="col-sm-8 total-overview clearfix">
+        <div class="col-sm-7 col-md-8 total-overview clearfix">
             <p><b><f:format.number decimals="0">{quote.itemCount}</f:format.number></b> vare(r) i indkøbskurv</p>
             <!--p class="shipping">{quote.shipping.carrierTitle}<span>{quote.shipping.price}.-</span></p-->
             <p class="amount">Ordretotal<span>kr {quote.grandTotal}.-</span></p>
