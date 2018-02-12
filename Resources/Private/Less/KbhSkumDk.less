@@ -267,6 +267,7 @@ section.content{
     margin: 0 auto 15px;
   }
 }
+
 form{
   legend{
     font-weight: 100;
@@ -330,5 +331,38 @@ form{
         }
       }
     }
+  }
+}
+
+.digidennis-sitepack-hero.baadogcamping{
+  padding: 8em 0;
+  background-position-y: 2%;
+  background-position-x: center;
+  @media screen {
+    @media (min-width: 1200px) {
+      padding: 10em 0 4em;
+      background-position-y: 52%;
+    }
+  }
+  & > .baadogcamping{
+    @media screen {
+      @media (min-width: 768px) {
+        width: 718px;
+      }
+      @media (min-width: 992px) {
+        width: 942px;
+      }
+      @media (min-width: 1200px) {
+        width: 1150px;
+      }
+    }
+  }
+}
+
+.baadcamping-bullet{
+  ul{
+    padding: 10px 0;
+    list-style-image: url('../Images/logo-bullet.png');
+    list-style-position: inside;
   }
 }

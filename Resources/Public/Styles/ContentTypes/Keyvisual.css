@@ -136,3 +136,8 @@
     background-position-x: 763px;
   }
 }
+.digidennis-sitepack-keyvisual baadcamping-bullet ul {
+  padding: 10px 0;
+  list-style-image: url('../Images/logo-bullet.png');
+  list-style-position: inside;
+}
