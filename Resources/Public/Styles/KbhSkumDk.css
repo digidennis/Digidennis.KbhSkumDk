@@ -616,6 +616,9 @@
 .option-content .neos-nodetypes-text p:last-child {
   margin-bottom: 0;
 }
+.digidennis-mageme-cartpage section.content {
+  margin-top: 75px;
+}
 .digidennis-mageme-cartpage .btn-primary {
   background-image: none;
   background-color: #324b7d;
@@ -624,7 +627,6 @@
   box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.4);
   border-color: #324b7d;
   border-radius: 1px;
-  margin-bottom: 2em;
   font-size: 18px;
 }
 .digidennis-mageme-cartpage .btn-primary:hover,
@@ -651,7 +653,6 @@
 .digidennis-mageme-cartpage .digidennis-mageme-cartcontent .shipping-estimate h5 {
   margin: 0 0 15px;
   font-size: 18px;
-  font-weight: 400;
 }
 .digidennis-mageme-cartpage .digidennis-mageme-cartcontent .qoute-item-list {
   margin-left: -15px;
@@ -941,7 +942,7 @@ section.content .neos-nodetypes-menu li.current a {
 }
 .breadcrumb {
   border-radius: 0;
-  background-color: unset;
+  background-color: transparent;
   padding: 0;
   margin: 0 0 4px;
   font-size: 14px;
