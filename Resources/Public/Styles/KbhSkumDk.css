@@ -155,13 +155,16 @@
     background-position-x: 763px;
   }
 }
+.digidennis-sitepack-keyvisual.baadogcamping-hero {
+  background: url(../Images/hynder-hero.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  padding: 10em 0 1em;
+  color: #fff;
+}
 .digidennis-sitepack-sitefooter {
   background-color: #4c4c4c;
   color: #ededed;
-}
-.digidennis-sitepack-sitefooter *[class^="col-"] img {
-  max-width: 133px;
-  padding: 15px 0;
 }
 .digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-content {
   margin-top: 30px;
@@ -196,20 +199,18 @@
 }
 .digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-properties .sitelogo img {
   width: 100px;
+  height: auto;
 }
-.digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-properties .digidennis-sitepack-icon.small {
-  font-size: 32px;
-  display: inline-block;
-  margin-right: 12px;
-  color: #2cdaff;
-  margin-top: 6px;
+.digidennis-sitepack-sitefooter .digidennis-sitepack-sitefooter-properties .digidennis-sitepack-imagefixed {
+  margin-top: 14px;
+  margin-bottom: 10px;
 }
 .digidennis-sitepack-sitefooter .legal {
   padding: 0.8em 0 0;
   text-align: center;
   background-color: #ffffff;
   font-size: 15px;
-  color: #2cdaff;
+  color: #4c4b4d;
 }
 .digidennis-sitepack-circle.insquare:first-child {
   width: 40%;
@@ -1040,41 +1041,39 @@ form .form-navigation ul .btn-primary:focus {
   background-color: #469dea;
   border-color: #fff;
 }
-.digidennis-sitepack-hero.baadogcamping {
-  padding: 10em 0 2em;
-  background-position-y: 0;
-  background-position-x: -348px;
-}
-@media screen and (min-width: 1200px) {
-  .digidennis-sitepack-hero.baadogcamping {
-    padding: 13em 0 15px;
-    background-position-y: top;
-    background-position-x: left;
-  }
-}
-.digidennis-sitepack-hero.baadogcamping h1 {
-  font-size: 2em;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 100;
-}
-@media screen and (min-width: 768px) {
-  .digidennis-sitepack-hero.baadogcamping h1 {
-    width: 718px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .digidennis-sitepack-hero.baadogcamping h1 {
-    width: 942px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .digidennis-sitepack-hero.baadogcamping h1 {
-    margin: 0 370px;
-  }
-}
 .baadcamping-bullet ul {
   padding: 10px 0;
-  list-style-image: url('../Images/logo-bullet.png');
   list-style-position: inside;
+  list-style-image: url('../Images/logo-bullet-rund.png');
+  margin-bottom: 30px;
+}
+.baadcamping-bullet ul li {
+  margin-bottom: 12px;
+  font-size: 1.1em;
+}
+.baadcamping-bullet ul li:last-child {
+  margin-bottom: 0;
+}
+.baadcamping-bullet h2 {
+  margin-top: 30px;
+}
+.baadogcamping-images {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 992px) {
+  .baadogcamping-images .row {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+}
+.baadogcamping-images *[class^="col-"] .neos-nodetypes-image {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 992px) {
+  .baadogcamping-images *[class^="col-"] {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }
