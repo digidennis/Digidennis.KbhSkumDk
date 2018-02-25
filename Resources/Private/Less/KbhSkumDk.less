@@ -334,35 +334,45 @@ form{
   }
 }
 
-.digidennis-sitepack-hero.baadogcamping{
-  padding: 8em 0;
-  background-position-y: 2%;
-  background-position-x: center;
-  @media screen {
-    @media (min-width: 1200px) {
-      padding: 10em 0 4em;
-      background-position-y: 52%;
-    }
-  }
-  & > .baadogcamping{
-    @media screen {
-      @media (min-width: 768px) {
-        width: 718px;
-      }
-      @media (min-width: 992px) {
-        width: 942px;
-      }
-      @media (min-width: 1200px) {
-        width: 1150px;
-      }
-    }
-  }
-}
-
-.baadcamping-bullet{
+.baadcamping-bullet {
   ul{
     padding: 10px 0;
-    list-style-image: url('../Images/logo-bullet.png');
     list-style-position: inside;
+    list-style-image: url('../Images/logo-bullet-rund.png');
+    margin-bottom:30px;
+    li{
+      margin-bottom: 12px;
+      font-size: 1.1em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  h2 {
+    margin-top: 30px;
+  }
+}
+.baadogcamping-images{
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  .row{
+    @media screen {
+      @media (min-width: 992px) {
+        margin-left: -8px;
+        margin-right: -8px;
+      }
+    }
+  }
+  *[class^="col-"]{
+    .neos-nodetypes-image{
+      margin-bottom:15px;
+    }
+    @media screen {
+      @media (min-width: 992px) {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+    }
   }
 }

@@ -157,10 +157,13 @@
 }
 .digidennis-sitepack-keyvisual.baadogcamping-hero {
   background: url(../Images/hynder-hero.jpg);
-  background-position: center bottom;
+  background-position: center top;
   background-size: cover;
   padding: 10em 0 1em;
   color: #fff;
+}
+.digidennis-sitepack-keyvisual.baadogcamping-hero h1 {
+  text-transform: uppercase;
 }
 .digidennis-sitepack-sitefooter {
   background-color: #4c4c4c;
