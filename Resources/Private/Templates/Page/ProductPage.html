@@ -5,6 +5,7 @@
         {parts.breadcrumbs -> f:format.raw()}
         <div class="product-wrapper">
             <f:form action="add" controller="Cart" package="Digidennis.MageMe" name="add-cart" class="add-cart container" id="add-cart-form" data="{component:'Product', baseprice:baseprice, producttype:producttype}">
+                <input type="hidden" name="itemid" class="hidden" value="{itemid}" />
                 <f:if condition="{productslot}">
                     <div class="hidden"
                          data-component="Slot"
@@ -34,7 +35,10 @@
                         </div>
                         <label for="qty">Antal</label>
                         <input id="qty" name="qty" size="3" value="1" min="1" type="number" required="required">
-                        <input class="btn btn-primary" type="submit" value="Læg i indkøbskurv">
+                        <f:if condition="{itemid}">
+                            <f:then><input class="btn btn-primary" type="submit" value="Opdater indkøbskurv"></f:then>
+                            <f:else><input class="btn btn-primary" type="submit" value="Læg i indkøbskurv"></f:else>
+                        </f:if>
                         <div class="digidennis-mageme-productpage-totalprice" data-component="TotalPrice" data-prefix="" data-currency-symbol="{currencySymbol}&nbsp;" data-postfix="<span>/stk</span>">0</div>
                         <div class="digidennis-mageme-productpage-pricemeta">Prisen afspejler de valgte muligheder inkl. moms</div>
                         <div class="row digidennis-mageme-productpage-bottomicons">

@@ -82,3 +82,4 @@ prototype(Neos.NodeTypes:Page.Document) {
 }
 root.@cache.entryIdentifier.dimensions =  ${ "dimensions=" + Json.stringify(request.arguments.dimensions)}
 root.@cache.entryIdentifier.options =  ${ "options=" + Json.stringify(request.arguments.options)}
+root.@cache.entryIdentifier.edit =  ${ "edit=" + Json.stringify(request.arguments.edit)}
