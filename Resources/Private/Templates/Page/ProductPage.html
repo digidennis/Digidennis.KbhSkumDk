@@ -21,7 +21,7 @@
                     <div class="col-md-6 col-lg-5 digidennis-mageme-productpage-sidebar">
                         <neos:contentElement.wrap node="{node}">{neos:contentElement.editable(property:'title', tag: 'h1', node:node)}</neos:contentElement.wrap>
                         <div class="digidennis-mageme-productpage-teaser">
-                            {neos:contentElement.editable(property:'teasercontent', tag: 'div', node:node)}
+                            <neos:contentElement.wrap node="{node}">{neos:contentElement.editable(property:'teasercontent', tag: 'div', node:node)}</neos:contentElement.wrap>
                         </div>
                         <div class="digidennis-mageme-productpage-summary" data-component="DimensionSummary"></div>
                         <div class="digidennis-mageme-productpage-delivery-days-string">{deliverystring}</div>

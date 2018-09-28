@@ -88,10 +88,10 @@
 .digidennis-sitepack-keyvisual.landing-hynde {
   color: #495865;
   padding: 40px 0 30px;
-  background: #495865 url('../Images/bamsepude_bg.jpg');
+  background: #495865 url('../Images/hyndertop.jpg');
   background-repeat: no-repeat;
-  background-position-x: -200px;
-  background-position-y: -40px;
+  background-position-x: -715px;
+  background-position-y: 0;
 }
 .digidennis-sitepack-keyvisual.landing-hynde h1 {
   margin-top: 0;
@@ -137,22 +137,21 @@
   font-family: 'Hind', sans-serif;
   top: 55%;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .digidennis-sitepack-keyvisual.landing-hynde {
-    color: #d7d6d2;
-    padding: 90px 0 60px;
-    background-position-x: 400px;
+    background-position-x: -639px;
   }
 }
 @media (min-width: 992px) {
   .digidennis-sitepack-keyvisual.landing-hynde {
+    color: #d7d6d2;
     padding: 120px 0 60px;
-    background-position-x: 542px;
+    background-position-x: 92px;
   }
 }
 @media (min-width: 1200px) {
   .digidennis-sitepack-keyvisual.landing-hynde {
-    background-position-x: 763px;
+    background-position-x: 127px;
   }
 }
 .digidennis-sitepack-keyvisual.baadogcamping-hero {
@@ -897,7 +896,7 @@ body strong {
   }
 }
 section.content {
-  margin: 70px 15px 0px;
+  margin: 70px 15px 0;
 }
 section.content .neos-nodetypes-menu {
   margin-top: 0;
