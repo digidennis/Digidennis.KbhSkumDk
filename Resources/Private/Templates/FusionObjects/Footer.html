@@ -1,0 +1,26 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace media=Neos\Media\ViewHelpers}
+
+<footer class="digidennis-sitepack-sitefooter">
+    <div class="container-fluid">
+        {content -> f:format.raw()}
+        <div class="digidennis-sitepack-sitefooter-properties">
+            <div class="row">
+                <div class="col-sm-3 instagram-link">
+                    <a href="https://www.instagram.com/kbh.skum/" target="_blank">
+                        <h3>Følg os på instagram</h3>
+                        <f:if condition="{brandlogo}"><media:image image="{brandlogo}" title="Følg os på instagram" alt="Følg os på instagram"/></f:if>
+                    </a>
+                </div>
+                <div class="col-sm-3">
+                    <h3>{site.context.currentSite.name}</h3>
+                    {menu -> f:format.raw()}
+                </div>
+                <div class="col-sm-6">
+                    {menucollection -> f:format.raw()}
+                </div>
+            </div>
+        </div>
+    </div>
+    <neos:contentElement.editable property="footerlegal" class="center-block legal"></neos:contentElement.editable>
+</footer>

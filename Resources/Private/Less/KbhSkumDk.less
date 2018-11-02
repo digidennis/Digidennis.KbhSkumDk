@@ -1,7 +1,7 @@
+@import 'mixins';
 @import 'ContentTypes/Button';
 @import 'ContentTypes/Keyvisual';
 @import 'ContentTypes/Homepage';
-@import 'mixins';
 @import 'ContentTypes/Circle';
 @import 'ContentTypes/Square';
 @import 'NodeTypes/ProductPage';
@@ -84,22 +84,6 @@ body{
   }
 }
 
-.slick-arrow{
-  &.slick-prev{
-    &:before{
-      content:"\e257";
-      font-family: "Glyphicons Halflings";
-    }
-    left:2px;
-  }
-  &.slick-next{
-    &:before{
-      content:"\e258";
-      font-family: "Glyphicons Halflings";
-    }
-    right:2px;
-  }
-}
 .digidennis-sitepack-googlemaps{
   margin: 0 0 15px;
   width:auto!important;
@@ -244,22 +228,25 @@ section.content{
   }
 }
 
-.container{
+.container {
   @media screen {
     @media (min-width: 768px) {
-      width: 718px;
+      width: 738px;
     }
     @media (min-width: 992px) {
-      width: 942px;
+      width: 962px;
+    }
+    @media (min-width: 1024px) {
+      width: 994px;
     }
     @media (min-width: 1200px) {
-      width: 1150px;
+      width: 1152px;
     }
   }
 }
 
-.formcollection{
-  .digidennis-sitepack-square{
+.formcollection {
+  .digidennis-sitepack-square {
     padding: 15px;
     background-color: #bdbaa5;
     color: white;
@@ -268,14 +255,14 @@ section.content{
   }
 }
 
-form{
-  legend{
+form {
+  legend {
     font-weight: 100;
     font-size: 24px;
-    color:currentColor;
+    color: currentColor;
   }
-  .clearfix{
-    label{
+  .clearfix {
+    label {
       margin-bottom: 0;
       font-weight: 400;
     }
@@ -287,9 +274,9 @@ form{
         padding: 6px 8px;
         border-style: solid;
         border-width: 1px;
-        color:@font-black;
+        color: @font-black;
         border-color: beige;
-        &.error{
+        &.error {
           border-color: #F70000;
         }
       }
@@ -297,7 +284,7 @@ form{
         border: none;
         padding: 4px 0;
       }
-      span.help-inline{
+      span.help-inline {
         color: #f70000;
         position: absolute;
         top: -24px;
@@ -305,27 +292,27 @@ form{
       }
     }
   }
-  .form-navigation{
-    ul{
+  .form-navigation {
+    ul {
       list-style: none;
       padding: 0;
       margin: 0;
-      li{
+      li {
         text-align: right;
         margin-left: 10px;
       }
-      .btn-primary{
+      .btn-primary {
         background-image: none;
         background: #324b7d;
         border-color: transparent;
         border-width: 0;
         border-radius: 4px;
-        box-shadow: 0 2px 4px 0 rgba(0,0,0,.21);
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .21);
         font-weight: 100;
         display: inline-block;
         padding: 7px 16px;
         font-size: 16px;
-        &:hover, &:focus{
+        &:hover, &:focus {
           background-color: #469dea;
           border-color: #fff;
         }
@@ -335,12 +322,12 @@ form{
 }
 
 .baadcamping-bullet {
-  ul{
+  ul {
     padding: 10px 0;
     list-style-position: inside;
     list-style-image: url('../Images/logo-bullet-rund.png');
-    margin-bottom:30px;
-    li{
+    margin-bottom: 30px;
+    li {
       margin-bottom: 12px;
       font-size: 1.1em;
       &:last-child {
@@ -352,11 +339,11 @@ form{
     margin-top: 30px;
   }
 }
-.baadogcamping-images{
+.baadogcamping-images {
   background-color: transparent;
   padding: 0;
   margin: 0;
-  .row{
+  .row {
     @media screen {
       @media (min-width: 992px) {
         margin-left: -8px;
@@ -364,9 +351,9 @@ form{
       }
     }
   }
-  *[class^="col-"]{
-    .neos-nodetypes-image{
-      margin-bottom:15px;
+  *[class^="col-"] {
+    .neos-nodetypes-image {
+      margin-bottom: 15px;
     }
     @media screen {
       @media (min-width: 992px) {

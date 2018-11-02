@@ -1,9 +1,11 @@
 .digidennis-mageme-productpage{
   section.content{
     & > .product-wrapper{
-      background-color: #f2f2f2;
-      padding-bottom: 30px;
       margin-bottom: 15px;
+      form.container{
+        padding-left: 0;
+        padding-right: 0;
+      }
     }
     .maincontent{
       margin:30px -15px 15px;
@@ -19,7 +21,7 @@
     font-weight: 300;
     @media screen{
       @media(min-width: 992px){
-        margin-top: 30px;
+        margin-top: 0px;
       }
     }
   }
@@ -32,15 +34,15 @@
   }
   .digidennis-mageme-productpage-slick{
     .slick-node{
-      width:~"calc(100% + 30px)";
+      /*width:~"calc(100% + 30px)";
       margin-left: -15px;
-      margin-right: -15px;
+      margin-right: -15px;*/
       margin-bottom: 15px;
       .slick-dots{
         text-align: left;
         position: relative;
         bottom: inherit;
-        margin-left: 15px;
+        /*margin-left: 15px;*/
         margin-top: 15px;
         li{
           width: 60px;
@@ -50,20 +52,20 @@
             border:1px solid #e2e0da;
           }
         }
-        @media screen{
+        /*@media screen{
           @media(min-width: 768px){
             margin-left: 0;
           }
-        }
+        }*/
       }
-      @media screen{
+      /*@media screen{
         @media(min-width: 768px){
           width:100%;
           margin-top: 0;
           margin-left: auto;
           margin-right: auto;
         }
-      }
+      }*/
       .slick-text{
         background-color: transparent;
       }
@@ -76,15 +78,18 @@
     margin-bottom: 2px;
   }
   .digidennis-mageme-productpage-sidebar{
+    .neos-nodetypes-text{
+      table {
+        margin-top:10px;
+        margin-bottom: 15px;
+        font-size:16px;
+      }
+    }
     label[for="qty"] {
       vertical-align: bottom;
-      margin-right: 8px;
       display: block;
     }
-    & > .stepper {
-      display: inline-block;
-      vertical-align: top;
-      margin-right: 5px;
+    .stepper {
       width:113px;
       input{
         width:40px;
@@ -95,30 +100,38 @@
       }
     }
     .btn-primary{
-      margin-top: -5px;
+      margin-top: 16px;
       background-image: none;
       background: #324b7d;
       border-color: transparent;
       border-width: 0;
       border-radius: 4px;
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.21);
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,.21);
       font-weight: 100;
-      display: inline-block;
-      margin-left: 2px;
       &:hover, &:focus{
         background-color: #469dea;
         border-color: #fff;
       }
     }
+    .price-wrapper{
+      position: relative;
+      clear: both;
+      height: 52px;
+    }
     .digidennis-mageme-productpage-totalprice{
       font-weight: 600;
-      font-size: 42px;
+      font-size: 36px;
       margin-top: 6px;
-      margin-bottom: -10px;
+      letter-spacing: -1.7px;
+      float: left;
+      clear: left;
+      margin-right: 15px;
+      margin-bottom:-5px;
       span {
-        font-weight: 100;
+        /*font-weight: 100;
         font-size: 0.8em;
-        margin-left: 10px;
+        margin-left: 5px;*/
+        display: none;
       }
     }
     .digidennis-mageme-productpage-pricemeta,
@@ -140,6 +153,7 @@
     }
     .digidennis-mageme-productpage-pricemeta {
       margin-bottom: 15px;
+      clear:both;
     }
     .digidennis-mageme-productpage-product-return-policy {
       margin-bottom: 15px;
@@ -149,20 +163,24 @@
         margin-right: 3px;
       }
     }
+    @media screen{
+      @media(max-width: 767px) or (max-device-width: 767px){
+        margin-left: -15px;
+        margin-right: -15px;
+      }
+    }
   }
   dl.interface{
     position: relative;
     background-color: #e2e2e2;
-    padding: 0 15px;
-    margin-left: -15px;
-    margin-right: -15px;
+    padding: 0 15px 10px;
+    /*margin-left: -15px;
+    margin-right: -15px;*/
+    margin-bottom: 10px;
+    &:last-child{
+      margin-bottom:0;
+    }
     dt{
-      position: relative;
-      height: 40px;
-      border-bottom: 1px solid #bcbcbc;
-      padding-bottom: 10px;
-      margin-bottom: 5px;
-      margin-top: 0;
       h5{
         border: none;
         font-weight: 600;
@@ -171,47 +189,16 @@
         margin:10px 0;
         padding: 0;
       }
-      .digidennis-mageme-option-toggle{
-        width: 32px;
-        height: 40px;
-        cursor: pointer;
-        display: inline-block;
-        background: url(../Images/arrow-down-close-icon.svg);
-        background-repeat: no-repeat;
-        background-position: -26px 5px;
-        background-size: 190%;
-        float: left;
-        vertical-align: text-bottom;
-        left: -15px;
-        padding: 7px;
-        background-color: #fff516;
-        position: relative;
-        &:hover{
-          background-position-y: -26px;
-          background-color: #fffd9f;
-        }
-        @media screen {
-          @media (min-width: 768px) {
-            left: -8px;
-          }
-        }
-      }
     }
     dd[data-component="Item"]+dd[data-component="Item"]{
      margin-top: -10px;
     }
-    &.option-open{
-      .digidennis-mageme-option-toggle{
-        background-position: 2px 4px;
-      }
-    }
-    @media screen{
+    /*@media screen{
       @media(min-width: 768px){
-        padding: 0 8px;
         margin-left: 0;
         margin-right: 0;
       }
-    }
+    }*/
   }
   .stepper{
     height: 26px;
@@ -247,4 +234,53 @@
       }
     }
   }
+
+  /*
+  .affixed{
+    transition: all .5s ease;
+  }
+
+  .qty-price-wrapper.affixed {
+    position: fixed;
+    height: 54px;
+    left: 0;
+    top: -60px;
+    right: 0;
+    transform: translateY(60px);
+    width: 100%;
+    background-color: #fff;
+    z-index: 200;
+    box-shadow:0 17px 5px -15px rgba(0, 0, 0, 0.1);
+    .digidennis-mageme-productpage-totalprice{
+      float:right;
+      margin-top:3px;
+      font-size:32px;
+      span{
+        margin-left: 6px;
+      }
+    }
+    .stepper, label[for="qty"], .digidennis-mageme-productpage-pricemeta{
+      display: none;
+    }
+    .btn{
+      margin-top:9px;
+      float: right;
+      margin-left: 15px;
+    }
+    .qty-price-inner {
+      margin: 0 auto;
+      padding: 0 15px;
+      @media screen {
+        @media(min-width: 768px) {
+            width: 718px;
+        }
+        @media(min-width: 992px) {
+            width: 942px;
+        }
+        @media(min-width: 1200px) {
+            width: 1150px;
+        }
+      }
+    }
+  }*/
 }

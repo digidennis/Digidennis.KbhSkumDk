@@ -68,6 +68,7 @@ prototype(Neos.NodeTypes:Page.Document) {
 		}
 	}
 	body {
+		parts.footer.templatePath = 'resource://Digidennis.KbhSkumDk/Private/Templates/FusionObjects/Footer.html'
 		javascripts{
 			minify.kbhskumdk = Digidennis.Minify:Resource {
 				group = 'jsbody'

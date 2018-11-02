@@ -4,11 +4,8 @@
 
 <dl {attributes -> f:format.raw()}>
 
-    <f:if condition="{open}">
-        <f:then><dt class="toggle-open"></f:then>
-        <f:else><dt></f:else>
-    </f:if>
-        <h5>{selection.label}</h5> <span class="digidennis-mageme-option-toggle"></span>
+    <dt>
+        <h5>{selection.label}</h5>
     </dt>
 
     <f:format.raw>
@@ -16,10 +13,6 @@
     </f:format.raw>
 
     <dd class="digidennis-mageme-option-notice"></dd>
-
-    <dd class="digidennis-mageme-option-price">
-        <div data-component="OptionPrice" data-currency-symbol="{currencySymbol}" data-prefix="&nbsp;"></div>
-    </dd>
 
     <f:if condition="{gotcontent}">
         <dd class="digidennis-mageme-option-content">

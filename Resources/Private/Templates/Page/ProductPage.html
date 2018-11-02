@@ -20,9 +20,7 @@
                     </div>
                     <div class="col-md-6 col-lg-5 digidennis-mageme-productpage-sidebar">
                         <neos:contentElement.wrap node="{node}">{neos:contentElement.editable(property:'title', tag: 'h1', node:node)}</neos:contentElement.wrap>
-                        <div class="digidennis-mageme-productpage-teaser">
-                            <neos:contentElement.wrap node="{node}">{neos:contentElement.editable(property:'teasercontent', tag: 'div', node:node)}</neos:contentElement.wrap>
-                        </div>
+                        <div class="digidennis-mageme-productpage-teaser">{content.maintext -> f:format.raw()}</div>
                         <div class="digidennis-mageme-productpage-summary" data-component="DimensionSummary"></div>
                         <div class="digidennis-mageme-productpage-delivery-days-string">{deliverystring}</div>
                         <div class="digidennis-mageme-productpage-product-return-policy">
@@ -33,22 +31,20 @@
                             </f:if>
                             <neos:link.node node="node://284bdf1f-89c5-4bea-b0bc-6523aaa04319">Læs mere</neos:link.node>
                         </div>
+
                         <label for="qty">Antal</label>
                         <input id="qty" name="qty" size="3" value="1" min="1" type="number" required="required">
-                        <f:if condition="{itemid}">
-                            <f:then><input class="btn btn-primary" type="submit" value="Opdater indkøbskurv"></f:then>
-                            <f:else><input class="btn btn-primary" type="submit" value="Læg i indkøbskurv"></f:else>
-                        </f:if>
-                        <div class="digidennis-mageme-productpage-totalprice" data-component="TotalPrice" data-prefix="" data-currency-symbol="{currencySymbol}&nbsp;" data-postfix="<span>/stk</span>">0</div>
-                        <div class="digidennis-mageme-productpage-pricemeta">Prisen afspejler de valgte muligheder inkl. moms</div>
-                        <div class="row digidennis-mageme-productpage-bottomicons">
-                            <div class="col-xs-6">
-                                <img src="{f:uri.resource(path: 'Images/sikkerforbind-opt.svg', package: 'Digidennis.KbhSkumDk')}">
-                            </div>
-                            <div class="col-xs-6">
-                                <img src="{f:uri.resource(path: 'Images/hurtighannd-opt.svg', package: 'Digidennis.KbhSkumDk')}">
-                            </div>
+
+                        <div class="price-wrapper" id="totalprice-wrapper">
+                            <div class="digidennis-mageme-productpage-totalprice" data-component="TotalPrice" data-prefix="" data-currency-symbol="{currencySymbol}&nbsp;" data-postfix="<span>/stk</span>">0</div>
+                            <f:if condition="{itemid}">
+                                <f:then><input class="btn btn-primary" type="submit" value="Opdater indkøbskurv"></f:then>
+                                <f:else><input class="btn btn-primary" type="submit" value="Læg i indkøbskurv"></f:else>
+                            </f:if>
                         </div>
+
+                        <div class="digidennis-mageme-productpage-pricemeta">Prisen afspejler de valgte muligheder inkl. moms</div>
+
                     </div>
                 </div>
                 {content.dimensionsblock -> f:format.raw()}
