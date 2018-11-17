@@ -162,6 +162,14 @@ body{
   }
 }
 section.content{
+  .centerheadline{
+    > .neos-nodetypes-headline:first-child{
+      color: #18bdb5;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
   margin: 70px 15px 0;
   .neos-nodetypes-menu {
     margin-top: 0;
@@ -246,12 +254,22 @@ section.content{
 }
 
 .formcollection {
+  .formcontent{
+    margin: 30px 0;
+    .digidennis-sitepack-spacer{
+      border-top: 1px solid #18bdb5;
+    }
+    .rounded img{
+      border-radius: 28px;
+      border: 15px solid transparent;
+    }
+  }
   .digidennis-sitepack-square {
-    padding: 15px;
-    background-color: #bdbaa5;
+    padding: 2em;
+    background-color: #18bdb5;
     color: white;
     text-align: left;
-    margin: 0 auto 15px;
+    margin: -15px;
   }
 }
 
@@ -361,5 +379,45 @@ form {
         padding-right: 8px;
       }
     }
+  }
+}
+
+.content > .omkbhskum{
+  > .neos-nodetypes-text {
+    text-align: center;
+    margin: 15px 0;
+  }
+  > .digidennis-sitepack-keyvisual{
+    padding: 15px 0;
+    margin: 0 0 15px;
+    > .neos-nodetypes-text {
+      max-width: 835px;
+      margin: 0 auto 15px;
+      padding: 15px;
+      font-size: 0.8em;
+      h1, h3 {
+        text-align: center;
+        margin-bottom: 18px;
+        color: #18bdb5;
+      }
+    }
+  }
+  .slick-slide{
+    border-left:15px solid white;
+  }
+  .slick-track {
+    margin-left: -10px;
+    margin-bottom: 20px;
+  }
+  .slick-node .slick-prev:before, .slick-node .slick-next:before
+  {
+    font-size:16px;
+    color:white;
+    opacity:1;
+  }
+  .neos-nodetypes-textwithimage > div {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 17px;
   }
 }

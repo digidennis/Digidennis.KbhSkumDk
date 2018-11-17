@@ -3,8 +3,26 @@
 <f:section name="body">
     {parts.menu -> f:format.raw()}
     <section class="content">
-        {content.cartcontent -> f:format.raw()}
-        {content.main -> f:format.raw()}
+        <f:if condition="{quotecount} > 0">
+            <f:then>
+                {content.cartcontent -> f:format.raw()}
+                {content.main -> f:format.raw()}
+            </f:then>
+            <f:else>
+                {content.cartcontent -> f:format.raw()}
+                {content.bar -> f:format.raw()}
+            </f:else>
+        </f:if>
+        <div class="icons">
+            <img src="{f:uri.resource(path: 'Images/sikkerforbind-opt.svg', package: 'Digidennis.KbhSkumDk')}">
+            <img src="{f:uri.resource(path: 'Images/dankort.png', package: 'Digidennis.KbhSkumDk')}">
+            <img src="{f:uri.resource(path: 'Images/edankort.png', package: 'Digidennis.KbhSkumDk')}">
+            <img src="{f:uri.resource(path: 'Images/visa.png', package: 'Digidennis.KbhSkumDk')}">
+            <img src="{f:uri.resource(path: 'Images/visaelectron.png', package: 'Digidennis.KbhSkumDk')}">
+            <img src="{f:uri.resource(path: 'Images/mastercard.png', package: 'Digidennis.KbhSkumDk')}">
+            <img src="{f:uri.resource(path: 'Images/mastercarddebet.png', package: 'Digidennis.KbhSkumDk')}">
+            <img src="{f:uri.resource(path: 'Images/hurtighannd-opt.svg', package: 'Digidennis.KbhSkumDk')}">
+        </div>
     </section>
     {parts.footer -> f:format.raw()}
 </f:section>

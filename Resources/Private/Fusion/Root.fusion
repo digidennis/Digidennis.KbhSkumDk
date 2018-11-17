@@ -23,6 +23,7 @@ prototype(Digidennis.MageMe:ProductPage.Document) {
 
 prototype(Digidennis.MageMe:CartPage.Document) {
 	body {
+		templatePath = 'resource://Digidennis.KbhSkumDk/Private/Templates/Page/CartPage.html'
 		content {
 			cartcontent = Neos.Fusion:Template {
 				templatePath = 'resource://Digidennis.KbhSkumDk/Private/Templates/FusionObjects/CartContent.html'
