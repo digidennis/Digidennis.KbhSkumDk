@@ -286,18 +286,24 @@ form {
       font-weight: 400;
     }
     label[for$="-Billed"], label[for$="-Tegning"] {
-      font-size: 16px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.21);
+      font-size: 14px;
       font-weight: 400;
       color: white;
-      background-color: #324b7d;
+      background-color: #354361;
       padding: 8px 36px 8px;
-      width: 250px;
+      width: 214px;
       display: inline-block;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       cursor: pointer;
       background-repeat: no-repeat;
       background-image: url('../Images/fileupload.png');
       background-position: 6px 5px;
+      border-radius: 4px;
+      &:hover,:focus{
+        background-color: #469dea;
+
+      }
     }
     .input {
       position: relative;
