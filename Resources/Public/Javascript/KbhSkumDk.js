@@ -1,32 +1,11 @@
 $(document).ready(function() {
-    $(".digidennis-mageme-option-toggle").each(function(){
-        if( !$(this).parent().parent().hasClass('option-open') ){
-            $(this).parent().parent().children('dd:not([class="digidennis-mageme-option-price"])').slideToggle(200,'swing');
-        };
-    }).on('click', function () {
-        $(this).parent().toggleClass('toggle-open');
-        $(this).parent().parent().toggleClass('option-open');
-        $(this).parent().parent().children('dd:not([class="digidennis-mageme-option-price"])').slideToggle(200,'swing');
-    });
-});
+    $( 'input[type="file"]' ).each( function() {
 
-/*
-	By Osvaldas Valutis, www.osvaldas.info
-	Available for use under the MIT License
-*/
-
-'use strict';
-
-;( function( $, window, document, undefined )
-{
-    $( 'input[type="file"]' ).each( function()
-    {
         var $input	 = $( this ),
             $label	 = $input.parent().parent().prev( 'label' ),
             labelVal = $label.html();
 
-        $input.on( 'change', function( e )
-        {
+        $input.on( 'change', function( e ) {
             var fileName = '';
 
             if( this.files && this.files.length > 1 )
@@ -39,10 +18,21 @@ $(document).ready(function() {
             else
                 $label.html( labelVal );
         });
-
         // Firefox bug fix
         $input
             .on( 'focus', function(){ $input.addClass( 'has-focus' ); })
             .on( 'blur', function(){ $input.removeClass( 'has-focus' ); });
     });
-})( jQuery, window, document );
+    /*
+    $(".digidennis-mageme-option-toggle").each(function(){
+        if( !$(this).parent().parent().hasClass('option-open') ){
+            $(this).parent().parent().children('dd:not([class="digidennis-mageme-option-price"])').slideToggle(200,'swing');
+        };
+    }).on('click', function () {
+        $(this).parent().toggleClass('toggle-open');
+        $(this).parent().parent().toggleClass('option-open');
+        $(this).parent().parent().children('dd:not([class="digidennis-mageme-option-price"])').slideToggle(200,'swing');
+    });*/
+});
+
+
