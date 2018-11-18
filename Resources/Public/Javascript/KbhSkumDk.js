@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $( 'input[type="file"]' ).each( function() {
+    /*$( 'input[type="file"]' ).each( function() {
 
         var $input	 = $( this ),
             $label	 = $input.parent().parent().prev( 'label' ),
@@ -22,7 +22,7 @@ $(document).ready(function() {
         $input
             .on( 'focus', function(){ $input.addClass( 'has-focus' ); })
             .on( 'blur', function(){ $input.removeClass( 'has-focus' ); });
-    });
+    });*/
     /*
     $(".digidennis-mageme-option-toggle").each(function(){
         if( !$(this).parent().parent().hasClass('option-open') ){
