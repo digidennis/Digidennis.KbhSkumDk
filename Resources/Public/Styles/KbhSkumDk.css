@@ -552,6 +552,14 @@
   left: 0;
   border-bottom: 1px solid #bbb;
 }
+.digidennis-mageme-productpage .digidennis-sitepack-sitealert {
+  padding: 1em 1em 0.5em;
+  text-align: center;
+  background-color: #9cedff;
+  margin-bottom: 15px;
+  color: #2d5e61;
+  font-size: 1.2em;
+}
 .digidennis-mageme-productcatalogpage section.content {
   margin-top: 70px;
 }
@@ -656,6 +664,14 @@
 }
 .option-content .neos-nodetypes-text p:last-child {
   margin-bottom: 0;
+}
+.digidennis-mageme-cartpage .digidennis-sitepack-sitealert {
+  padding: 1em 1em 0.5em;
+  text-align: center;
+  background-color: #9cedff;
+  color: #2d5e61;
+  font-size: 1.2em;
+  margin: 75px 15px -60px;
 }
 .digidennis-mageme-cartpage section.content {
   margin-top: 75px;
